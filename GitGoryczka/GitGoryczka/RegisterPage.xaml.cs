@@ -16,5 +16,10 @@ namespace GitGoryczka
         {
             InitializeComponent();
         }
+
+        private void Register(object sender, EventArgs e)
+        {
+
+        }
     }
 }
