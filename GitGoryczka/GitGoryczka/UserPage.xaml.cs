@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GitGoryczka.ClassModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,13 +13,15 @@ namespace GitGoryczka
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UserPage : ContentPage
     {
-        public UserPage()
+        public UserPage(Account acc)
         {
             InitializeComponent();
+            WebView.Source = acc.Class.Path;
         }
+
         private void LogOut(object sender, EventArgs e)
         {
-
+            Navigation.PopAsync();
         }
     }
 }
