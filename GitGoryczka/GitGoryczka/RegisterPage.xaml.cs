@@ -43,5 +43,10 @@ namespace GitGoryczka
                 }
             }
         }
+
+        private void Register(object sender, EventArgs e)
+        {
+
+        }
     }
 }
