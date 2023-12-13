@@ -64,6 +64,16 @@
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    WidthRequest="200"/>
+            <Entry x:Name="RepeatPasswordTxT"
+                   IsPassword="True"
+                   Grid.Column="1"
+                   Grid.Row="2"
+                   FontSize="25"
+                   FontAttributes="Bold"
+                   TextColor="LightBlue"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   WidthRequest="200"/>
             <Label x:Name="Error" 
                    Grid.Column="0"
                    Grid.ColumnSpan="2"
