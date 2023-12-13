@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GitGoryczka.MainPage"
-             NavigationPage.HasNavigationBar="False">
+             x:Class="GitGoryczka.RegisterPage">
     <Frame Padding="50"
            Margin="10"
            BorderColor="LightBlue"
@@ -13,6 +12,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
@@ -64,11 +64,10 @@
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    WidthRequest="200"/>
-            <Entry x:Name="RepeatPasswordTxT"
-                   IsPassword="True"
-                   Grid.Column="1"
-                   Grid.Row="2"
-                   FontSize="25"
+            <Picker x:Name="picker"
+                    Grid.Column="1"
+                    Grid.Row="3"
+                    FontSize="25"
                    FontAttributes="Bold"
                    TextColor="LightBlue"
                    HorizontalOptions="Center"
@@ -83,23 +82,8 @@
                    TextColor="DarkRed"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
-            <Button Clicked="Login"
-                    Grid.Row="4"
-                    Grid.Column="0"
-                    Grid.ColumnSpan="2"
-                    Text="Zaloguj się"
-                    FontSize="20"
-                    TextColor="LightBlue"
-                    BorderColor="LightBlue"
-                    BorderWidth="5"
-                    CornerRadius="15"
-                    BackgroundColor="White"
-                    WidthRequest="200"
-                    HeightRequest="60"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"/>
             <Button Clicked="Register"
-                    Grid.Row="5"
+                    Grid.Row="6"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Text="Zarejestruj się"
@@ -116,5 +100,4 @@
         </Grid>
 
     </Frame>
-
 </ContentPage>
