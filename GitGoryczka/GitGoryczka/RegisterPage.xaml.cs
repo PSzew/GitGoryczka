@@ -38,15 +38,11 @@ namespace GitGoryczka
                 }
                 if (isUnicate)
                 {
-                    PublicClass.accounts.Add(new Account(LoginTxT.Text, PasswordTxT.Text, Class));
+                    Class = picker.SelectedItem as UserClass;
+                    PublicClass.accounts.Add(new Account(LoginTxT.Text, PasswordTxT.Text,Class));
                     Navigation.PopAsync();
                 }
             }
-        }
-
-        private void Register(object sender, EventArgs e)
-        {
-
-        }
+        }        
     }
 }

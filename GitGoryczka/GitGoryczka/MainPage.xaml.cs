@@ -28,16 +28,15 @@ namespace GitGoryczka
                 if (LoginTxT.Text == account.Login && PasswordTxT.Text == account.Password)
                 {
                     Navigation.PushAsync(new UserPage(account));
-                }
-                else
-                    Error.Text = "Sprawdź dane logowania";
+                    
+                }                    
             }
+            Error.Text = "Sprawdź dane logowania";
 
         }
 
         private void Register(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new RegisterPage());
             Navigation.PushAsync(new RegisterPage());
         }
         protected override void OnAppearing()
