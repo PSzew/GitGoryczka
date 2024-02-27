@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GitGoryczka.UserPage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Wyloguj" Clicked="LogOut"/>
+        <ToolbarItem Text="Profil" Clicked="Profil_Clicked"/>
     </ContentPage.ToolbarItems>
     <WebView x:Name="WebView"/>
 </ContentPage>

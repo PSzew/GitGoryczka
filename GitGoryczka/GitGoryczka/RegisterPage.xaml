@@ -20,7 +20,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Label Text="Zaloguj się"
+            <Label Text="Zarejestruj się"
                    Grid.Column="0"
                    Grid.ColumnSpan="2"
                    Grid.Row="0"

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GitGoryczka.Profile">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="Name"
+                   FontAttributes="Bold"
+                   TextColor="LightBlue"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="30"/>
+            <Picker x:Name="picker" 
+                    ItemDisplayBinding="{Binding Class}"
+                    FontAttributes="Bold"
+                    TextColor="LightBlue"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="300"
+                    HorizontalTextAlignment="Center"/>
+            <Button Text="Zapisz zmiane!"
+                    Clicked="SaveChange"
+                    FontSize="20"
+                    TextColor="LightBlue"
+                    BorderColor="LightBlue"
+                    BorderWidth="5"
+                    CornerRadius="15"
+                    BackgroundColor="White"
+                    WidthRequest="250"
+                    HeightRequest="60"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+            <Button Text="Wyloguj sie!" 
+                    Clicked="LogOut"
+                    FontSize="20"
+                    TextColor="LightBlue"
+                    BorderColor="LightBlue"
+                    BorderWidth="5"
+                    CornerRadius="15"
+                    BackgroundColor="White"
+                    WidthRequest="250"
+                    HeightRequest="60"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
